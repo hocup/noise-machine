@@ -1,7 +1,9 @@
 const files = [
+    "NodeContainer.js",
+    "FrequencyCanvas.js",
     "main.js"
 ];
-const SCRIPT_ROOT = "scripts"
+const SCRIPT_ROOT = "dist"
 const fileLoaded: {[key:string]: boolean} = {};
 
 files.forEach((filename: string) => {
@@ -30,4 +32,5 @@ files.forEach((filename: string) => {
 
 function start() {
     console.log("READY TO ROLL");
+    mainStart();
 }
